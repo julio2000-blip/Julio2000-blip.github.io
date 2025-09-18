@@ -5,61 +5,63 @@
   <title>Flores Amarillas + Billie Eilish</title>
   <style>
     body {
-      background: #f0f8ff;
+      background: #fff8dc;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
       margin: 0;
       font-family: Arial, sans-serif;
     }
+
     .flor {
       width: 120px;
       height: 120px;
       position: relative;
       animation: girar 6s linear infinite;
+      margin-bottom: 20px;
     }
+
     .petalo {
       width: 60px;
-      height: 90px;
+      height: 60px;
       background: yellow;
-      border-radius: 50% 50% 0 0;
-      position: absolute;
-      top: 10px;
-      left: 30px;
-      transform-origin: bottom center;
-    }
-    .petalo:nth-child(1) { transform: rotate(0deg); }
-    .petalo:nth-child(2) { transform: rotate(72deg); }
-    .petalo:nth-child(3) { transform: rotate(144deg); }
-    .petalo:nth-child(4) { transform: rotate(216deg); }
-    .petalo:nth-child(5) { transform: rotate(288deg); }
-    .centro {
-      width: 70px;
-      height: 70px;
-      background: brown;
       border-radius: 50%;
       position: absolute;
-      top: 25px;
-      left: 25px;
+      top: 30px;
+      left: 30px;
+      transform-origin: center;
     }
+
+    .petalo:nth-child(1) { transform: rotate(0deg) translateX(60px); }
+    .petalo:nth-child(2) { transform: rotate(72deg) translateX(60px); }
+    .petalo:nth-child(3) { transform: rotate(144deg) translateX(60px); }
+    .petalo:nth-child(4) { transform: rotate(216deg) translateX(60px); }
+    .petalo:nth-child(5) { transform: rotate(288deg) translateX(60px); }
+
+    .centro {
+      width: 60px;
+      height: 60px;
+      background: orange;
+      border-radius: 50%;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
     @keyframes girar {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
+
     iframe {
-      margin-top: 30px;
       border-radius: 12px;
-    }
-    h1 {
-      margin-bottom: 20px;
-      color: #444;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>🌼 Flores Amarillas 🌼</h1>
   <div class="flor">
     <div class="petalo"></div>
     <div class="petalo"></div>
@@ -69,12 +71,14 @@
     <div class="centro"></div>
   </div>
 
-  <!-- Video de Billie Eilish - Wildflower -->
-  <iframe width="360" height="215"
-    src="https://www.youtube.com/embed/nPtxGC0F0_w?autoplay=1&loop=1"
-    title="Billie Eilish - Wildflower"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  <h2>🌼 Flores Amarillas + Billie Eilish 🌼</h2>
+
+  <!-- Reproductor de YouTube -->
+  <iframe width="300" height="170" 
+    src="https://www.youtube.com/embed/4j2uk6j0R6U?autoplay=1"
+    title="Billie Eilish - Wildflower" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
   </iframe>
 </body>
